@@ -1,0 +1,18 @@
+.main-slider-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-slider-container {
+    max-width: 1440px;
+    width: 100%;
+    
+}
+
+.main-slider {
+    max-width: 1440px;
+    max-height: 478px;
+    width: 100%;
+}

@@ -1,0 +1,24 @@
+.lower-header {
+    width: 100%;
+    background: #183F62;
+    display: flex;
+    justify-content: center;
+}
+
+.lower-header-list {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    height: 55px;
+    justify-content: space-between;
+    padding: 0 48px;
+    align-items: center;
+    
+}
+
+.lower-header-list li {
+    font-size: 16px;
+    list-style: none;
+    color: #FAFAFA;
+
+}

@@ -21,7 +21,6 @@ function App() {
 
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/test' element={<TestPage />} />
     </Routes>
 
     <Footer />  {/* Footer component placed outside Routes to appear on all pages */}

@@ -49,3 +49,9 @@
     transform: scale(1.03);
     transition: all 0.3s ease;
 }
+
+@media (max-width: 550px) {
+    .upper-header-BTNS {
+        display: none;
+    }
+}

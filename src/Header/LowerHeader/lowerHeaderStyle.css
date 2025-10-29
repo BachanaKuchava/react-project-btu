@@ -22,3 +22,10 @@
     color: #FAFAFA;
 
 }
+
+
+@media (max-width: 900px) {
+    .lower-header {
+        display: none;
+    }
+}

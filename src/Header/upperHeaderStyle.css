@@ -50,6 +50,20 @@
     transition: all 0.3s ease;
 }
 
+.burger-menu {
+    display: none;
+    
+}
+
+@media(max-width: 900px) {
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+    opacity: 80%;
+    
+}
+}
+
 @media (max-width: 550px) {
     .upper-header-BTNS {
         display: none;

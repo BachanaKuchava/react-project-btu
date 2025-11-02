@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../assets/logo.png';
 import './upperHeaderStyle.css';
+import menu from '../assets/Menu.svg'
 
 function UpperHeader() {
   return (
@@ -12,6 +13,7 @@ function UpperHeader() {
                 <button className="upper-header-BTNS">კარიერა</button>
                 <button className="upper-header-BTNS">ჩვენს შესახებ</button>
                 <div className="languaheChanger">EN</div>
+                <img src={menu} alt="menu" className="burger-menu"/>
             </div>
 
         </div>

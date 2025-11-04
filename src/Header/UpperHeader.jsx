@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../assets/logo.png';
 import './upperHeaderStyle.css';
-import menu from '../assets/Menu.svg'
+import menu from '../assets/Menu.svg';
+import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 function UpperHeader() {
+  const [burgerOpen, setBurgerOpen] = useState(false);
+
   return (
     <>
     <div className="upper-header"> 
@@ -13,14 +16,20 @@ function UpperHeader() {
                 <button className="upper-header-BTNS">კარიერა</button>
                 <button className="upper-header-BTNS">ჩვენს შესახებ</button>
                 <div className="languaheChanger">EN</div>
-                <img src={menu} alt="menu" className="burger-menu"/>
+                <img
+                  src={menu}
+                  alt="menu"
+                  className="burger-icon"
+                  onClick={() => setBurgerOpen(true)}
+                  style={{ cursor: 'pointer' }}
+                />
             </div>
 
         </div>
 
     </div>
-        
-    
+
+    <BurgerMenu open={burgerOpen} onClose={() => setBurgerOpen(false)} />
     </>
   );
 }

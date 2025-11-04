@@ -8,7 +8,7 @@ function Home() {
    <>
    <Slider />
    <Analytics />
-    <LowerBlocks />
+    {/* <LowerBlocks /> */}
    </>
   );
 } export default Home;

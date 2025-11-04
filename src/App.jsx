@@ -5,12 +5,14 @@ import LowerHeader from './Header/LowerHeader/LowerHeader';
 import Footer from './Footer/Footer';
 import Home from './pages/HomePage/Home';
 import TestPage from './pages/testPage/TestPage';
-
+import BurgerMenu from './Header/BurgerMenu/BurgerMenu';
 
 import './App.css'
 
 function App() {
- 
+ const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const toggleMenu = () => setIsMenuOpen((p) => !p);
+   const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
 
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/test' element={<BurgerMenu />} />
     </Routes>
 
     <Footer />  {/* Footer component placed outside Routes to appear on all pages */}

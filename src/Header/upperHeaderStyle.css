@@ -50,13 +50,13 @@
     transition: all 0.3s ease;
 }
 
-.burger-menu {
+.burger-icon {
     display: none;
     
 }
 
 @media(max-width: 900px) {
-  .burger-menu {
+  .burger-icon {
     display: block;
     cursor: pointer;
     opacity: 80%;

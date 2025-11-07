@@ -10,9 +10,7 @@ import BurgerMenu from './Header/BurgerMenu/BurgerMenu';
 import './App.css'
 
 function App() {
- const [isMenuOpen, setIsMenuOpen] = useState(false);
-   const toggleMenu = () => setIsMenuOpen((p) => !p);
-   const closeMenu = () => setIsMenuOpen(false);
+
 
   return (
     <>
@@ -23,7 +21,8 @@ function App() {
 
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/test' element={<BurgerMenu />} />
+      {/* <Route path='/test' element={<BurgerMenu name="giorgi"/>} />
+      <Route path='/test5' element={<BurgerMenu name="bacho"/>} /> */}
     </Routes>
 
     <Footer />  {/* Footer component placed outside Routes to appear on all pages */}

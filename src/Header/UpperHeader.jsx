@@ -5,7 +5,10 @@ import menu from '../assets/Menu.svg';
 import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 function UpperHeader() {
+
   const [burgerOpen, setBurgerOpen] = useState(false);
+
+  
 
   return (
     <>
@@ -21,15 +24,16 @@ function UpperHeader() {
                   alt="menu"
                   className="burger-icon"
                   onClick={() => setBurgerOpen(true)}
-                  style={{ cursor: 'pointer' }}
+                  
+                  
                 />
             </div>
 
         </div>
 
     </div>
+          <BurgerMenu open={burgerOpen} onClose={() => setBurgerOpen(false)}/>
 
-    <BurgerMenu open={burgerOpen} onClose={() => setBurgerOpen(false)} />
     </>
   );
 }
